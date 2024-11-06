@@ -21,7 +21,11 @@ public class Person implements Serializable {
 
     private String email;
 
-    public Person(String name, String email) {
+    public Person() {
+    }
+
+    public Person(Integer id, String name, String email) {
+        this.id = id;
         this.name = name;
         this.email = email;
     }
